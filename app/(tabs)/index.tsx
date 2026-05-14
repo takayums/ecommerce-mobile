@@ -30,11 +30,11 @@ export default function Home() {
       {/* Products List */}
       <FlatList
         data={data}
-        contentContainerClassName="px-5 gap-5"
+        contentContainerClassName="p-5 gap-5"
         columnWrapperClassName="gap-5"
         numColumns={2}
         renderItem={({ item }) => (
-          <View className="relative flex-1 overflow-hidden rounded-2xl border border-gray-200 p-4 hover:cursor-pointer">
+          <View className="elevation-md relative flex-1 rounded-2xl border border-gray-200 bg-white p-4 shadow-md shadow-black/50 hover:cursor-pointer">
             <View className="mb-3 flex h-28 items-center justify-center rounded-2xl">
               <Image
                 source={{ uri: item.images[0] }}
@@ -71,7 +71,7 @@ export default function Home() {
         )}
         ListHeaderComponent={() => (
           <View>
-            <View className="my-5 flex-row items-center justify-between">
+            <View className="mb-5 flex-row items-center justify-between">
               <View>
                 <Text className="mb-1 font-quicksand text-sm leading-3 text-gray-500">
                   Hello, Welcome 👋🏻
