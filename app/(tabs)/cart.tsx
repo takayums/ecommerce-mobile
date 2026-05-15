@@ -2,7 +2,7 @@ import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-import { CartItem } from "@/components";
+import { CartItem, HeaderBar } from "@/components";
 
 export default function Cart() {
   const cartData = [
@@ -48,13 +48,7 @@ export default function Cart() {
         contentContainerClassName="pt-5 px-5 pb-28"
         data={cartData}
         renderItem={({ item }) => <CartItem item={item} />}
-        ListHeaderComponent={() => (
-          <View className="mb-5 flex items-center justify-center">
-            <Text className="font-quicksand-bold text-lg text-gray-800">
-              Checkout
-            </Text>
-          </View>
-        )}
+        ListHeaderComponent={() => <HeaderBar label="Checkout" />}
         ListFooterComponent={() => (
           <>
             <View className="elevation-md rounded-2xl border border-gray-200 bg-white p-4 shadow-md shadow-black/20">
