@@ -44,7 +44,7 @@ export default function Transaction() {
   return (
     <SafeAreaView className="flex-1 bg-white">
       <FlatList
-        contentContainerClassName="gap-3 pt-5 px-5 pb-28"
+        contentContainerClassName="pt-5 px-5 pb-28"
         data={data}
         renderItem={({ item }) => <TransactionItem data={item} />}
         ListHeaderComponent={<HeaderBar label="Transaction" />}

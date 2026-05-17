@@ -4,7 +4,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 
 export default function TransactionItem({ data }) {
   return (
-    <View className="elevation-md rounded-xl border border-gray-200 bg-white p-3 shadow-md">
+    <View className="elevation-md mb-3 rounded-xl border border-gray-200 bg-white p-3 shadow-md">
       {/* Header */}
       <View className="flex flex-row items-center justify-between border-b border-gray-200 pb-2">
         <View className="flex flex-row items-center gap-1">

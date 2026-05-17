@@ -48,7 +48,7 @@ export default function Cart() {
         contentContainerClassName="pt-5 px-5 pb-28"
         data={cartData}
         renderItem={({ item }) => <CartItem item={item} />}
-        ListHeaderComponent={() => <HeaderBar label="Checkout" />}
+        ListHeaderComponent={() => <HeaderBar label={"Checkout"} />}
         ListFooterComponent={() => (
           <>
             <View className="elevation-md rounded-2xl border border-gray-200 bg-white p-4 shadow-md shadow-black/20">
